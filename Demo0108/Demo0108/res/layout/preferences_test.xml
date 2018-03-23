@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <Preference
+        android:key="key_general"
+        android:title="SETTINGS_GENERAL_BRIGHTNESS"
+        android:dialogTitle="SETTINGS_GENERAL_BRIGHTNESS"
+        android:layout="@layout/preference_arrow" >
+        <!-- Start Intent from application -->
+       <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.charlie.demo0108.simple.ActivityBrightness"
+            android:targetPackage="com.charlie.demo0108"/> 
+    </Preference>
+	
+    <ListPreference
+        android:defaultValue="30"
+        android:entries="@array/screen_time_keep"
+        android:entryValues="@array/screen_time_keep_value"
+        android:key="key_auto_power"
+        android:title="dialog_timeout"
+        android:layout="@layout/preference" />
+	<CheckBoxPreference
+	    android:title="夜间模式"
+	    android:key="key_night_mode"/>
+	    
+	<SwitchPreference
+	    android:switchTextOn="仅wifi下载"
+	    android:switchTextOff="wifi,4g,2g都可以下载"
+	    android:key="key_wifi_only"
+	    android:title="下载限制"
+	    />
+	<CheckBoxPreference
+	    android:title="不保留活动"
+	    android:summary="用户离开后立即清除每个活动"
+	    android:layout="@layout/preference_checkbox" 
+	    android:widgetLayout="@layout/widget_checkbox"
+	    android:key="key_clear"/>
+</PreferenceScreen>

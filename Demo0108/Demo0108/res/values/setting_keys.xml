@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key_screen_brightness">key_screen_brightness</string>
+    <string name="key_screen_timeout">key_screen_timeout</string>
+    <string name="key_sound">key_sound</string>
+    <string name="key_language">key_language</string>
+    <string name="key_units">key_units</string>
+    
+    <string name="key_sound_volume">key_sound_volume</string>
+    <string name="key_sound_smart_volume">key_sound_smart_volume</string>
+    <string name="key_sound_turn_warning">key_sound_turn_warning</string>
+    <string name="key_sound_spoken_street_name">key_sound_spoken_street_name</string>
+    
+    <string name="key_navigation_gps_set">key_navigation_gps_set</string>
+</resources>

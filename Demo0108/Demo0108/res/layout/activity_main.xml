@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.charlie.demo0108.MainActivity" >
+        
+  <widget.SquarLinearLayout
+      android:divider="@color/abc_search_url_text_pressed"
+      android:showDividers="middle|end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_system"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="系统" />
+        <Button
+            android:id="@+id/btn_non_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="非系统" />
+
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="all" />
+      
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="on"
+            android:textOff="off"
+            android:text="ToggleButton" />
+
+ </widget.SquarLinearLayout>
+ <widget.CustomRelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+      <TextView
+          android:text="relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ </widget.CustomRelativeLayout>
+  <widget.CustomFrameLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+      <TextView
+          android:text="frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ </widget.CustomFrameLayout>
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+          <ListView
+        android:id="@+id/lv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:layout_height="wrap_content" />
+              <ListView
+        android:id="@+id/lv2"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

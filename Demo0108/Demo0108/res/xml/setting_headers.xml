@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+    <header
+        android:fragment="preference.FragmentGeneral"
+        android:icon="@drawable/adp_settingsactivity_general_icon"
+        android:summary="normal set"
+        android:title="General" />
+    <header
+        android:icon="@drawable/adp_settingsactivity_network_icon"
+        android:title="Network" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.charlie.demo0108.simple.ActivityWifiSetting"
+            android:targetPackage="com.charlie.demo0108" />
+    </header>
+    <header
+        android:fragment="preference.FragmentNavigationMaps"
+        android:icon="@drawable/adp_settingsactivity_navigation_icon"
+        android:title="Navigation+Maps" />
+    <header
+        android:fragment="preference.FragmentGeneral"
+        android:icon="@drawable/adp_settingsactivity_safety_warning_system_icon"
+        android:title="Safety+Security" />
+    <header
+        android:fragment="preference.FragmentGeneral"
+        android:icon="@drawable/adp_settingsactivity_information_icon"
+        android:title="information" />
+    <header
+        android:icon="@drawable/adp_settingsactivity_register_icon"
+        android:title="Admin" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.charlie.demo0108.simple.ActivityWifiSetting"
+            android:targetPackage="com.charlie.demo0108" />
+    </header>
+
+</preference-headers>

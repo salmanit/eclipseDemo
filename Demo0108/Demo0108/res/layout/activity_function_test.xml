@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_click_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickSound"
+                android:text="clickSound" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_wake_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="wakeLock"
+                    android:text="wake lock" />
+
+                <Button
+                    android:id="@+id/btn_wake_unlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="wakeUnlock"
+                    android:text="wake unlock" />
+
+                <CheckBox
+                    android:id="@+id/cb_lock_reference_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="reference count" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_set_off_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="changeSystemSetting"
+                        android:text="设置screen_off_time" />
+
+                    <Button
+                        android:id="@+id/btn_reset_off_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="resetToPre"
+                        android:text="还原为设置前" />
+
+                    <Button
+                        android:id="@+id/btn_change_current_brightness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="changeCurrentBrightnessByWindow"
+                        android:text="修改当前屏幕亮度" />
+
+                    <Button
+                        android:id="@+id/btn_reset_current_brightness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="resetCurrentBrightnessByWindow"
+                        android:text="还原当前屏幕亮度" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_show_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="resetToPre"
+                    android:text="显示带进度条的通知" />
+
+                <Button
+                    android:id="@+id/btn_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="testWifi"
+                    android:text="wifi测试" />
+
+                <TextView
+                    android:id="@+id/tv_wifi_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <Button
+                    android:id="@+id/btn_count_down_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="startCountDown"
+                    android:text="count down 3" />
+
+                <Button
+                    android:id="@+id/btn_count_down_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="stopCountDown"
+                    android:text="count down stop" />
+
+                <Button
+                    android:id="@+id/btn_file_change_observer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="fileObsever"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="file_change_observer" />
+
+                <TextView
+                    android:id="@+id/tv_file_change_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="file change info"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_path_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@drawable/custom_ripple_1"
+                    android:hint="path_show"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

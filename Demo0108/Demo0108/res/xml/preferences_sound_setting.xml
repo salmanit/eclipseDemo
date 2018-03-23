@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <preference.SeekBarPreference
+        android:key="@string/key_sound_volume"
+        android:defaultValue="40"
+        android:title="Volume" />
+	<CheckBoxPreference
+	    android:defaultValue="true"
+	    android:title="Smart Volume"
+	    android:summary="Volume adjustment based on speed"
+	    android:layout="@layout/preference_checkbox" 
+	    android:widgetLayout="@layout/widget_checkbox"
+	    android:key="@string/key_sound_smart_volume"/>
+    <ListPreference
+        android:defaultValue="Beeps"
+        android:entries="@array/setting_sound_turn_warnings"
+        android:entryValues="@array/setting_sound_turn_warnings_value"
+        android:key="@string/key_sound_turn_warning"
+        android:title="Turn Warnings"
+        android:layout="@layout/preference" />
+	<CheckBoxPreference
+	    android:defaultValue="true"
+	    android:title="Spoken Street Names"
+	    android:layout="@layout/preference_checkbox" 
+	    android:key="@string/key_sound_spoken_street_name"/>
+	    <Preference
+       	android:fragment="preference.FragmentNavigationMaps"
+       	android:layout="@layout/preference" 
+        android:title="test go on fragment" />
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	    
+	<SwitchPreference
+	    android:switchTextOn="仅wifi下载"
+	    android:switchTextOff=""
+	    android:key="key_wifi_only"
+	    android:title="map display placeholder"
+	    />
+</PreferenceScreen>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="@string/key_screen_brightness"
+        android:layout="@layout/preference_arrow"
+        android:title="Screen BrightNess" >
+
+        <!-- Start Intent from application -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.charlie.demo0108.simple.ActivityBrightness"
+            android:targetPackage="com.charlie.demo0108" />
+    </Preference>
+
+    <ListPreference
+        android:defaultValue="30"
+        android:dialogTitle="title_screen_timeout"
+        android:entries="@array/screen_time_keep"
+        android:entryValues="@array/screen_time_keep_value"
+        android:key="@string/key_screen_timeout"
+        android:layout="@layout/preference"
+        android:title="screen_timeout" />
+
+    <Preference
+        android:fragment="preference.FragmentGeneralSoundSetting"
+        android:key="@string/key_sound"
+        android:layout="@layout/preference_arrow"
+        android:title="Sounds" />
+
+    <ListPreference
+        android:defaultValue="Engish"
+        android:dialogTitle="dialog_title_language"
+        android:entries="@array/setting_language"
+        android:entryValues="@array/setting_language_value"
+        android:key="@string/key_language"
+        android:layout="@layout/preference"
+        android:title="Language" />
+    <ListPreference
+        android:defaultValue="f"
+        android:dialogTitle="dialog_title_Units"
+        android:entries="@array/setting_distance_units"
+        android:entryValues="@array/setting_distance_units_value"
+        android:key="@string/key_units"
+        android:layout="@layout/preference"
+        android:title="Units" />
+
+</PreferenceScreen>

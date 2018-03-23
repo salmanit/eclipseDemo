@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension" />
+        <attr name="captchaHeight" format="dimension" />
+        <attr name="matchDeviation" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="FlowStepShowAttr">
+        <attr name="flow_step_normal_icon" format="reference" />
+        <attr name="flow_step_target_icon" format="reference" />
+        <attr name="flow_step_passed_icon" format="reference" />
+        <attr name="flow_step_passed_line_color" format="color" />
+        <attr name="flow_step_normal_line_color" format="color" />
+        <attr name="flow_step_text_color" format="color" />
+        <attr name="flow_step_text_size" format="dimension" />
+        <attr name="flow_step_text_bottom" format="boolean" />
+        <attr name="flow_step_clickable" format="boolean" />
+        <attr name="flow_step_drawable_padding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="FragmentArguments">
+        <attr name="android:label" />
+       <attr name="android:color"/>
+       <attr name="android:textSize"/>
+       <attr name="android:textColor"/>
+       <attr name="android:orientation"/>
+    </declare-styleable>
+
+    
+    <attr name="listviewBackgroundTwocolour" format="reference" />
+    
+</resources>

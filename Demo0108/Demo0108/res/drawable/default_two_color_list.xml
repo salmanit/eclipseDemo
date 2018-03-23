@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+      <item android:maxLevel="0" android:drawable="@color/default_tow_color_white" />  
+    <item android:maxLevel="1" android:drawable="@color/default_tow_color_black" />  
+    <item android:maxLevel="2" android:drawable="@color/default_tow_color_select" />  
+</level-list>

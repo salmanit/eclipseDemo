@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88888888"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="fragmentlife1" />
+
+    <widget.TempertureShow
+        android:background="#215980"
+        android:id="@+id/tempertureShow1"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <widget.JustTestCanvas
+        android:id="@+id/justTestCanvas1"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#215847"/>
+    <widget.FlowStepShow
+        android:id="@+id/flowStepShow1"
+        android:paddingTop="15dp" 
+        android:background="#000"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <widget.FlowStepShow
+        android:id="@+id/flowStepShow2"
+        android:paddingTop="5dp" 
+        android:paddingBottom="5dp"
+        android:background="#000"
+        app:flow_step_normal_icon="@drawable/ic_normal"
+        app:flow_step_text_size="22dp"
+        app:flow_step_text_color="@android:color/holo_green_dark"
+        app:flow_step_text_bottom="true"
+        app:flow_step_clickable="true"
+        app:flow_step_drawable_padding="10dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content" />
+<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#215847"/>
+</LinearLayout>

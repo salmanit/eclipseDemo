@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	    
+	<SwitchPreference
+	    android:layout="@layout/preference" 
+	    android:switchTextOn="Auto"
+	    android:switchTextOff="Manual"
+	    android:key="@string/key_navigation_gps_set"
+	    android:title="Set GPS by GPS"
+	    />
+	<Preference android:title="Region"
+	    android:layout="@layout/preference" 
+	    android:summary="Reg0"/>
+</PreferenceScreen>

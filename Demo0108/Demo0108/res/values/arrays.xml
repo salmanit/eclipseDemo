@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_headers">
+        <item >General</item>
+        <item >Network</item>
+        <item >Navigation+Maps</item>
+        <item >Safety+Security</item>
+        <item >Information</item>
+        <item >Admin</item>
+    </string-array>
+    
+    <string-array name="screen_time_keep">
+        <item>30 mins</item>
+        <item>40 mins</item>
+        <item>60 mins</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="screen_time_keep_value">
+        <item>30</item>
+        <item>40</item>
+        <item>60</item>
+        <item>3600000000</item>
+    </string-array>
+    
+    <string-array name="setting_language">
+        <item >Engish</item>
+        <item >French</item>
+        <item >Chinese</item>
+         </string-array>
+    <string-array name="setting_language_value">
+        <item >Engish</item>
+        <item >French</item>
+        <item >Chinese</item>
+    </string-array>
+    
+    <string-array name="setting_distance_units">
+        <item >miles/feet</item>
+        <item >kilometers/meters</item>
+    </string-array>
+    <string-array name="setting_distance_units_value">
+        <item >f</item>
+        <item >m</item>
+    </string-array>
+    
+    <string-array name="setting_sound_turn_warnings">
+        <item >Bells</item>
+        <item >Chimes</item>
+        <item >Beeps</item>
+        <item >Voice</item>
+    </string-array>
+    <string-array name="setting_sound_turn_warnings_value">
+        <item >Bells</item>
+        <item >Chimes</item>
+        <item >Beeps</item>
+        <item >Voice</item>
+    </string-array>
+</resources>

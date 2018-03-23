@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       android:scaleType="centerCrop"
+        android:src="@drawable/shtq" />
+
+   
+
+   
+	 <widget.DotRotate
+        android:id="@+id/dotRotate1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+	  <widget.TaiJiView
+        android:id="@+id/taiJiView1"
+        android:pivotX="1"
+        android:pivotY="205%"
+        android:fromDegrees="0"
+       	android:toDegrees="360"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+	  <widget.DrawBitmapPartView
+	      android:id="@+id/drawBitmapPartView1"
+	      android:layout_width="300dp"
+	      android:layout_height="300dp"
+	      android:layout_alignParentRight="true"
+	      android:layout_alignParentBottom="true"
+	      android:layout_marginRight="63dp"
+	      android:layout_marginBottom="69dp" />
+
+</RelativeLayout>

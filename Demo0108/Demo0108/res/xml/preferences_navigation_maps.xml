@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="@string/key_screen_brightness"
+        android:layout="@layout/preference_arrow"
+        android:title="Vehicle Profile" >
+
+        <!-- Start Intent from application -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.charlie.demo0108.simple.ActivityBrightness"
+            android:targetPackage="com.charlie.demo0108" />
+    </Preference>
+
+
+    <Preference
+        android:fragment="preference.FragmentNavigationMapsNavigation"
+        android:layout="@layout/preference_arrow"
+        android:title="Navigation" />
+    <Preference
+        android:fragment="preference.FragmentNavigationMapsMapDisplay"
+        android:layout="@layout/preference_arrow"
+        android:title="Map Display" />
+    <Preference
+        android:fragment="preference.FragmentNavigationMapsGPSPosition"
+        android:layout="@layout/preference_arrow"
+        android:title="GPS Position" />
+
+  
+
+</PreferenceScreen>
